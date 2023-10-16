@@ -10,12 +10,19 @@
         </ul>
         <p v-show="mostrarEmail">Fala cos guri ai{{email}}</p>
         <p>Para acessar meu curriculo click aqui, <a v-bind:href="link">Aqui songo mongo</a> </p>
+        <pictures></pictures>
+
     </div>
 </template>
 
 <script>
+
+import pictures from './pictures.vue';
     export default {
         name: "Info",
+        components: {
+            pictures,
+        },
         data() {
             return {
                 trabalhar: false,
