@@ -8,6 +8,10 @@
             <li>Vue</li>
             <li>HTML</li>
         </ul>
+
+        <div>
+            <button @click="showemail">Email</button>
+        </div>
         <p v-show="mostrarEmail">Fala cos guri ai{{email}}</p>
         <p>Para acessar meu curriculo click aqui, <a v-bind:href="link">Aqui songo mongo</a> </p>
         <pictures></pictures>
@@ -26,9 +30,14 @@ import pictures from './pictures.vue';
         data() {
             return {
                 trabalhar: false,
-                mostrarEmail: true,
+                mostrarEmail: false,
                 email: "iouiysufdyghiajoskpd@gmail.com",
-                link: 'https://www.chess.com'
+                link: 'https://www.chess.com',
+            }
+        },
+        methods:{
+            showemail(){
+                console.log("TEste email")
             }
         }
     }
