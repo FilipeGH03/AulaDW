@@ -12,21 +12,17 @@
         <div>
             <button @click="showemail">Email mostrar</button>
         </div>
-        <p v-show="mostrarEmail">Fala com os guri ai{{email}}</p>
-        <p>Para acessar meu curriculo click aqui, <a v-bind:href="link">Aqui songo mongo</a> </p>
-        <pictures></pictures>
+        <p v-show="mostrarEmail">Fala com os guri ai {{email}}</p>
+        <p class="teste">Para acessar meu curriculo click aqui, <a v-bind:href="link">Aqui songo mongo</a> </p>
 
     </div>
 </template>
 
 <script>
 
-import pictures from './pictures.vue';
     export default {
         name: "Info",
-        components: {
-            pictures,
-        },
+        
         data() {
             return {
                 trabalhar: false,
@@ -43,3 +39,10 @@ import pictures from './pictures.vue';
         }
     }
 </script>
+
+
+<style>
+    .paragrafo-pai {
+        color: blueviolet;
+    }
+</style>
