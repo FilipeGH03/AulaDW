@@ -2,7 +2,7 @@
   <h1>Vamooo funciono</h1>
   <primeiroComponente></primeiroComponente>
   <p>Esse {{ name }}</p>
-  <p>Oureo {{ teste }}</p>
+  <p>Vc? {{ teste }}</p>
   <LifeCycle></LifeCycle>
   <Pessoa></Pessoa>
   <Form></Form>
@@ -25,8 +25,8 @@ export default {
 
 data(){
   return{
-  name: "Will",
-  teste: "Oi"
+  name: "new",
+  teste: "Fala calabreso"
 }
 }
 

@@ -22,8 +22,8 @@
         },
         data() {
             return {
-                nome: "will",
-                profissao: "stope"
+                nome: "tiringa",
+                profissao: "tiringueiro"
             }
         }
     }

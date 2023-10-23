@@ -15,15 +15,22 @@ export default  {
 
     created(){
         setTimeout(() => {
-            this.name = "Will mt massa"
+            this.name = "legal né mt massa"
         }, 1000)
+        this.lifeCycle()
         
     },
     mounted(){
         setTimeout(() => {
-            this.name = "Ouro alfujem"
+            this.name = "Aquele cara la"
         },1000)
         
+    },
+
+    methods: {
+        lifeCycle(){
+            console.log ("alguma coisa")
+        }
     }
 
 }

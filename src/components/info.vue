@@ -10,7 +10,7 @@
         </ul>
 
         <div>
-            <button @click="showemail">Email</button>
+            <button @click="showemail">Email mostrar</button>
         </div>
         <p v-show="mostrarEmail">Fala cos guri ai{{email}}</p>
         <p>Para acessar meu curriculo click aqui, <a v-bind:href="link">Aqui songo mongo</a> </p>
@@ -37,7 +37,8 @@ import pictures from './pictures.vue';
         },
         methods:{
             showemail(){
-                console.log("TEste email")
+                // console.log("TEste email")
+                this.mostrarEmail = !this.mostrarEmail
             }
         }
     }
