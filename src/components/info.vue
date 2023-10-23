@@ -12,7 +12,7 @@
         <div>
             <button @click="showemail">Email mostrar</button>
         </div>
-        <p v-show="mostrarEmail">Fala cos guri ai{{email}}</p>
+        <p v-show="mostrarEmail">Fala com os guri ai{{email}}</p>
         <p>Para acessar meu curriculo click aqui, <a v-bind:href="link">Aqui songo mongo</a> </p>
         <pictures></pictures>
 
@@ -31,7 +31,7 @@ import pictures from './pictures.vue';
             return {
                 trabalhar: false,
                 mostrarEmail: false,
-                email: "iouiysufdyghiajoskpd@gmail.com",
+                email: "tiringa.terra@gmail.com",
                 link: 'https://www.chess.com',
             }
         },
