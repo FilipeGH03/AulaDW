@@ -4,9 +4,9 @@
         <p v-if="trabalhar">Não quero trabalhar</p>
         <p v-else >Não quero faze nada</p>
         <ul>
-            <li>JavaScript</li>
-            <li>Vue</li>
-            <li>HTML</li>
+            <li>Lábia</li>
+            <li>Xadrez</li>
+            <li>Banheiro</li>
         </ul>
 
         <div>
