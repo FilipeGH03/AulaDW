@@ -1,5 +1,7 @@
 <template>
-    <Header></Header>
+    <!-- <Header></Header> -->
+    <NavBar></NavBar>
+    <RouterView></RouterView>
   <h1 class="paragrafo-pai">Aula DW </h1>
   <primeiroComponente></primeiroComponente>
   <p>Esse {{ name }}</p>
@@ -16,7 +18,9 @@ import primeiroComponente from './components/primeiroComponente.vue';
 import LifeCycle from './components/LifeCycle.vue';
 import Pessoa from './components/Pessoa.vue';
 import pictures from './components/pictures.vue';
-import Header from './components/Header.vue';
+// import Header from './components/Header.vue';
+import NavBar from './components/NavBar.vue';
+import { RouterLink } from 'vue-router';
 
 
 export default {
@@ -26,8 +30,9 @@ export default {
     LifeCycle,
     Pessoa,
     pictures,
-    Header
-
+    // Header,
+    NavBar,
+    RouterLink
 },
 
 
@@ -47,8 +52,7 @@ data(){
 
 
   body {
-    background-color: rgb(128, 206, 209);
-    color: aliceblue;
+    color: black;
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   }

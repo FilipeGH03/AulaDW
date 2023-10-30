@@ -1,10 +1,10 @@
 <template>
     <div>
         <ul>
-            <li><a href="#">Calabreso</a></li>
-            <li><a href="#">CNPJoto</a></li>
-            <li><a href="#">Arabio Saudito</a></li>
-            <li><a href="">Ludmilo</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">saiba mais</a></li>
+            <li><a href="#">Escola</a></li>
+            <li><a href="#">faculdade</a></li>
         </ul>
     </div>
 </template>
