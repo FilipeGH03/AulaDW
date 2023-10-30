@@ -4,16 +4,18 @@
         <p v-if="trabalhar">Não quero trabalhar</p>
         <p v-else >Não quero faze nada</p>
         <ul>
-            <li>Lábia</li>
-            <li>Xadrez</li>
-            <li>Banheiro</li>
-        </ul>
+            <li v-for="tecnologia in listatecnologia" v-bind:key="index">{{ tecnologia }}</li>
 
+        </ul>
+        <p>Utilizo seguintes ferramentas</p>
+        <ul>
+            <li v-for="tecnologia in listaferramenta" v-bind:key="tecnologia.id">{{ tecnologia.ferramenta }}</li>
+        </ul>
         <div>
             <button @click="showemail">Email mostrar</button>
         </div>
         <p v-show="mostrarEmail">Fala com os guri ai {{email}}</p>
-        <p class="teste">Para acessar meu curriculo click aqui, <a v-bind:href="link">Aqui songo mongo</a> </p>
+        <p class="teste">Para acessar meu curriculo click aqui, <a v-bind:href="link">Clique aqui</a> </p>
 
     </div>
 </template>
@@ -29,6 +31,11 @@
                 mostrarEmail: false,
                 email: "tiringa.terra@gmail.com",
                 link: 'https://www.chess.com',
+                listatecnologia: ["JavaScript", "Vue", "HTML"],
+                listaferramenta: [
+                    {id:1, ferramenta: 'Chess'},
+                    {id:2, ferramenta: 'Class'},
+            ]
             }
         },
         methods:{
