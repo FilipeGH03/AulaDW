@@ -1,6 +1,6 @@
 <template>
 <div>
-    <button type="button" class="btn btn-success">Success</button>
+    <input type="submit" class="btn btn-success" value="Enviar">
 </div>
 </template>
 

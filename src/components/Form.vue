@@ -1,11 +1,13 @@
 <template>
-    <form action="">
+
+    <form action="" @submit="enviarFormulario($event)">
         <div>
-            <InputText></InputText>
-            <InputText></InputText>
+            <input type="text" v-model="name">
+            <input type="text" v-model="email">
             <Submit></Submit>
         </div>
     </form>
+
 </template>
 
 <script>
@@ -20,6 +22,26 @@ import Submit from './Form/Submit.vue';
         components:{
             InputText,
             Submit
+        },
+
+        data(){
+            return {
+                name: "",
+                email: ""
+            }
+        },
+
+        methods: {
+            enviarFormulario(e){
+                e.preventDefault();
+                
+                let name = this.name;
+                let email = this.email;
+                console.log("o nome é " + name + " o email é " + email)
+                console.log("form enviado")
+            }
         }
-    }
+      };
+
+    
 </script>
