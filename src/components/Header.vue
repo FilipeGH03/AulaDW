@@ -2,9 +2,10 @@
     <div>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">saiba mais</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Noticias</a></li>
             <li><a href="#">Escola</a></li>
-            <li><a href="#">faculdade</a></li>
+            <li v-if="estaLogado"><a href="#">Perfil</a></li>
         </ul>
     </div>
 </template>
@@ -14,7 +15,10 @@
 
 export default {
 
-    name:"Header"
+    name:"Header",
+
+
+    props:["estaLogado"]
 }
 </script>
 

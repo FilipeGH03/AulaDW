@@ -1,20 +1,21 @@
 <template>
     <div>
+        <!-- <p>{{ compEmail }}</p> -->
         <p>Ela utiliza as seguintes tecnologias:</p>
-        <p v-if="trabalhar">Não quero trabalhar</p>
-        <p v-else >Não quero faze nada</p>
+        <p v-if="trabalhar">Funcionou o trabalaho:</p>
+        <p v-else >Positivo aqui</p>
         <ul>
             <li v-for="tecnologia in listatecnologia" v-bind:key="index">{{ tecnologia }}</li>
 
         </ul>
-        <p>Utilizo seguintes ferramentas</p>
+        <p>Utilizando seguintes ferramentas</p>
         <ul>
             <li v-for="tecnologia in listaferramenta" v-bind:key="tecnologia.id">{{ tecnologia.ferramenta }}</li>
         </ul>
         <div>
             <button @click="showemail">Email mostrar</button>
         </div>
-        <p v-show="mostrarEmail">Fala com os guri ai {{email}}</p>
+        <p v-show="mostrarEmail">Contato fala ai {{email}}</p>
         <p class="teste">Para acessar meu curriculo click aqui, <a v-bind:href="link">Clique aqui</a> </p>
 
     </div>
@@ -25,16 +26,23 @@
     export default {
         name: "Info",
         
+        props: {
+            email : String,
+            estouTrabalhando : Boolean,
+        },
+
+
+
         data() {
             return {
                 trabalhar: false,
                 mostrarEmail: false,
-                email: "tiringa.terra@gmail.com",
-                link: 'https://www.chess.com',
-                listatecnologia: ["JavaScript", "Vue", "HTML"],
+                // email: "aaaaaaaa_@gmail.com",
+                link: 'https://www.google.com',
+                listatecnologia: ["Riot", "HTML", "Steam"],
                 listaferramenta: [
-                    {id:1, ferramenta: 'Chess'},
-                    {id:2, ferramenta: 'Class'},
+                    {id:1, ferramenta: 'Figma'},
+                    {id:2, ferramenta: 'Chess'},
             ]
             }
         },
